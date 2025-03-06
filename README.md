@@ -1,24 +1,30 @@
-# Análisis y Clasificación de Clientes
+# Dashboard de Terremotos a Nivel Mundial
 
-### Título: Análisis y Clasificación de Clientes para Campañas de Marketing
+Crear un **dashboard interactivo utilizando Plotly y Dash**. 
 
-El objetivo es identificar distintos segmentos de clientes basados en sus comportamientos de compra y características demográficas para diseñar campañas de marketing más efectivas.
+Con esa información desarrollar un conjunto de visualizaciones interactivas que proporcionen una comprensión profunda de los patrones y tendencias de los terremotos. Este ejercicio te permitirá aplicar conocimientos adquiridos sobre visualización de datos y desarrollo de dashboards con herramientas de Python.
 
+El dataset contiene información detallada sobre terremotos, incluyendo:
++ fecha y hora del evento
++ magnitud
++ profundidad
++ país en el que ocurrió.
 
-### Descripción del Proyecto
+Utilizar esta información para crear varios gráficos interactivos que ayudarán a explorar y presentar los datos de manera efectiva.
 
-Este proyecto tiene como objetivo utilizar técnicas de análisis de datos y aprendizaje automático para identificar diferentes segmentos de clientes basados en sus comportamientos de compra y características demográficas. Esto te permitirá desarrollar estrategias de marketing dirigidas y personalizadas. Aplicar métodos de preprocesamiento de datos, reducción de dimensiones, y técnicas de clustering para analizar un conjunto de datos simulado de clientes.
+### Consigna
 
+Desarrollar un dashboard interactivo utilizando **Plotly** y **Dash** para visualizar los datos de terremotos proporcionados en el archivo `earthquake data.csv`. 
 
-### Datos
+Asegúrate de que el dashboard tenga un diseño limpio y organizado, con títulos claros y descripciones para cada gráfico.
 
-Utilizar un dataset simulado llamado `datos_clientes.csv` que contiene información demográfica y de comportamiento de compra de clientes, como la edad, los ingresos anuales, la puntuación de gasto y la categoría de producto favorito.
+1. **Cargar y Preparar los Datos**: Carga el archivo `earthquake data.csv` y realiza las transformaciones necesarias, como convertir la columna de fecha y hora al formato datetime.
 
+2. **Creación de Gráficos**: Crea los siguientes gráficos usando plotly:
+    + **Mapa Coroplético**: Un mapa coroplético que muestre la densidad de terremotos por región.
+    + **Gráfico de Barras**: Un gráfico de barras que muestre el número de terremotos por magnitud.
+    + **Gráfico de Líneas**: Un gráfico de líneas que muestre la tendencia de la magnitud de los terremotos a lo largo del tiempo.
+    + **Gráfico de Dispersión**: Un gráfico de dispersión que muestre la relación entre la magnitud de los terremotos y su profundidad.
+    + **Gráfico 3D**: Un gráfico 3D que visualice la relación entre magnitud, profundidad y tiempo.
 
-### Consigna del Proyecto
-
-1. **Preprocesamiento de Datos**: Cargar, limpiar y preparar el dataset para el análisis. Esto incluye la normalización de los datos para asegurar que las técnicas de reducción de dimensiones y clustering funcionen correctamente.
-2. **Reducción de Dimensiones**: Utilizar **PCA** y **SVD** para reducir la cantidad de variables y destacar las características más importantes que influyen en el comportamiento del cliente.
-3. **Clustering**: Implementar **K-Means** y **Clustering Jerárquico** para segmentar los clientes en grupos basados en similitudes en sus datos. Esto ayudará a identificar patrones y tendencias entre diferentes tipos de clientes.
-4. **Visualización de Datos**: Crear visualizaciones para interpretar los resultados de las técnicas de reducción de dimensiones y clustering. Esto incluye la creación de **gráficos de dispersión** para los resultados de PCA y la visualización de **dendrogramas** para el Clustering Jerárquico.
-5. **Interpretación y Estrategias de Marketing**: Analizar los clusters obtenidos y desarrollar propuestas de estrategias de marketing específicas para cada segmento de clientes. Justificar las estrategias basándote en las características y comportamientos de los grupos identificados.
+3. **Diseño de la Aplicación**: Usando Dash, crea la aplicación con el Layout del Dashboard, en el que deben desplegarse todos los gráficos que has preparado. Finalmente ejecuta la aplicación.
